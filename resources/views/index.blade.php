@@ -1,11 +1,11 @@
 @extends('app')
 
 @section('contents')
-    {{-- {!! $dataTable->table() !!} --}}
+    {!! $dataTable->table() !!}
 @endsection
 
 @push('scripts')
-    {{-- {!! $dataTable->scripts() !!} --}}
+    {!! $dataTable->scripts() !!}
     <script>
 //         $(document).ready( function () {
 //     $('#myTable').DataTable();

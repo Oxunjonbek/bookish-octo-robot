@@ -16,7 +16,7 @@
         <div class="row">
             @section('contents')
                 @show
-                <table class="table table-bordered" id="users-table">
+                {{-- <table class="table table-bordered" id="users-table">
                     <thead>
                         <tr>
                             <th>Id</th>
@@ -29,7 +29,7 @@
                             <th>Updated At</th>
                         </tr>
                     </thead>
-                </table>
+                </table> --}}
         </div>
     </div>
     @stack('scripts')
@@ -61,22 +61,6 @@
     //         });
     //     }
     // });
-    $(function() {
-        $('#users-table').DataTable({
-            processing: true,
-            serverSide: true,
-            ajax: '{!! route('users') !!}',
-            columns: [
-                { data: 'id', name: 'id' },
-                { data: 'name', name: 'name' },
-                { data: 'email', name: 'email' },
-                { data: 'age', name: 'age' },
-                { data: 'TCKN', name: 'TCKN' },
-                { data: 'status', name: 'status' },
-                { data: 'created_at', name: 'created_at' },
-                { data: 'updated_at', name: 'updated_at' }
-            ]
-        });
-    });
+
     </script>
 </html>
